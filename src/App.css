@@ -1,42 +1,41 @@
-.container {
-  padding: 20px;
-  font-family: Arial, sans-serif;
+.App {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .searchBar {
-  width: 100%;
-  max-width: 400px;
   padding: 10px;
-  margin-bottom: 20px;
   font-size: 16px;
-  box-sizing: border-box;
+  margin-bottom: 20px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-.countriesGrid {
+.countriesContainer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
 .countryCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 150px;
+  width: 200px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
   padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
 }
 
-.countryCard img {
-  width: 100px;
-  height: auto;
-  margin-bottom: 10px;
+.flag {
+  width: 100%;
+  border-radius: 5px;
 }
 
 .countryCard p {
-  margin: 0;
+  margin-top: 10px;
+  font-size: 18px;
   font-weight: bold;
-  text-align: center;
 }
