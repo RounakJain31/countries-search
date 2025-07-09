@@ -32,7 +32,7 @@ const App = () => {
     if (search === "") data1 = countries;
     else
       data1 = countries.filter((d) =>
-        d.commn.toLowerCase().includes(search.toLowerCase())
+        d.common.toLowerCase().includes(search.toLowerCase())
       );
     setFilteredCountries(data1);
   }, [search, countries]);
@@ -48,8 +48,8 @@ const App = () => {
       <div className="container">
         {filteredCountries?.map((country) => (
           <Country
-            key={country.name}
-            name={country.commn}
+            key={country.common}
+            name={country.common}
             flag={country.png}
           />
         ))}
