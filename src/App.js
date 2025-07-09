@@ -9,7 +9,7 @@ const App = () => {
   const fetchData = async () => {
     try {
       const res = await fetch(
-        "https://countries-search-data-prod-812920491762.asia-south1.run.app/countries ",
+        "https://countries-search-data-prod-812920491762.asia-south1.run.app/countries",
         {
           mode: "cors",
         }
@@ -17,8 +17,8 @@ const App = () => {
       console.log(res);
       const data = await res.json();
       console.log(data);
-      //setCountries(data);
-      setFilteredCountries(data);
+      setCountries(data);
+      //setFilteredCountries(data);
     } catch (error) {
       console.error("API call failed:", error);
     }
@@ -49,7 +49,7 @@ const App = () => {
         {filteredCountries?.map((country) => (
           <Country
             key={country.name}
-            name={country.common}
+            name={country.commn}
             flag={country.png}
           />
         ))}
